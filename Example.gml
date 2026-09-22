@@ -59,4 +59,6 @@ draw_surface(surface,0,0);
 
 Social_async
 
-buffer_set_surface(buffer,surface,0);
+if async_load[?"event_type"] == "wgpu_run_done" {
+    buffer_set_surface(buffer,surface,0);
+}
