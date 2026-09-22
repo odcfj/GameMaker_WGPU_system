@@ -30,10 +30,6 @@
 
 * Binds a GPU buffer to the specified group and binding of a shader.
 
-#### `wg_shader_set_workgroup(shader id, x, y, z)`
-
-* Sets the workgroup size of a shader.
-
 ---
 
 ### Data Transfer
@@ -66,6 +62,10 @@
 #### `wg_shader_delete(shader id)`
 
 * Deletes a shader.
+
+#### `wg_shader_set_workgroup(shader run id, x, y, z)`
+
+* Sets the workgroup quantity of a execution of the specified shader.
 
 #### `wg_shader_end_download_buffer(shader run id, vbuffer, memory address, bytes)`
 
